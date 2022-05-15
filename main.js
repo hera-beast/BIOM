@@ -6,16 +6,14 @@ $(document).ready(function() {
 });
 
 
-
 // where, when you need it section
 
-let scrollContainer = document.getElementById('images');
+ let scrollContainer = document.getElementById('images');
 
 scrollContainer.addEventListener("wheel", (evt) => {
     evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY * 0.1;
-	
-});
+    scrollContainer.scrollLeft += evt.deltaY * 0.02;
+}); 
 
 // instagram section
 
@@ -23,7 +21,7 @@ let scrollContainerInstagram = document.getElementById('clean-with-biom');
 
 scrollContainerInstagram.addEventListener("wheel", (evt) => {
     evt.preventDefault();
-    scrollContainerInstagram.scrollLeft += evt.deltaY * 0.1;
+    scrollContainerInstagram.scrollLeft += evt.deltaY * 0.02;
 	
 });
 
@@ -36,7 +34,7 @@ $('.mobile-menu').toggle();
 });
 
 $(window).resize(function() {
-   'use strict'; if ($(window).width() >= 682) {
+   'use strict'; if ($(window).width() >= 797) {
       $(".mobile-menu").hide();
     }
   });
